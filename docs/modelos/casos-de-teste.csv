@@ -1,0 +1,4 @@
+﻿ID;Funcionalidade;Título;Técnica;Pré-condição;Passos;Dados de teste;Resultado esperado;Resultado obtido;Status;Bug relacionado
+CT-01;Login;Entrar com a conta de teste;Caminho feliz;Estar na tela de login;1. Digitar e-mail e senha 2. Clicar em Entrar;professor@meuplan.test / Plan@2026;Abre Meus planos com 3 planos;;Não executado;
+CT-02;Login;Entrar com senha errada;Caso negativo;Estar na tela de login;1. Digitar e-mail correto e senha errada 2. Clicar em Entrar;professor@meuplan.test / errada123;Mensagem "E-mail ou senha incorretos." e continua no login;;Não executado;
+CT-03;Novo plano;Número de aulas no limite superior;Valor limite;Logado com conta Gratuita;1. Abrir Novo plano 2. Preencher tema 3. Informar 10 aulas 4. Gerar;Tema: frações · Aulas: 10;Plano gerado com 10 aulas;;Não executado;

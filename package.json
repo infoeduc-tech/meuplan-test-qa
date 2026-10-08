@@ -1,0 +1,22 @@
+{
+  "name": "meu-plan-test-qa",
+  "version": "2.4.1",
+  "description": "Ambiente de treinamento em Qualidade de Software: gerador fictício de planejamentos de aula com falhas propositais.",
+  "private": true,
+  "type": "module",
+  "author": "InfoEduc Tech",
+  "scripts": {
+    "start": "node scripts/servidor.js",
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "node --test \"tests/unit/**/*.test.js\"",
+    "test:e2e": "playwright test",
+    "test:e2e:ver": "playwright test --headed",
+    "relatorio": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

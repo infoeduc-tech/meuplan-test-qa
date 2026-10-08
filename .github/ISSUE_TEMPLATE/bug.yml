@@ -1,0 +1,83 @@
+name: Relatar bug
+description: Registre uma falha encontrada no Meu Plan.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: resumo
+    attributes:
+      label: Resumo
+      description: O problema em uma frase. Ex.: "Busca não encontra plano quando o título está em minúsculas".
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Onde aconteceu
+      options:
+        - Cadastro
+        - Login
+        - Novo plano
+        - Plano gerado
+        - Meus planos
+        - Plano salvo (abrir, editar, exportar)
+        - Assinatura
+        - Perfil
+        - Outro
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      description: Numere cada passo. Inclua a conta usada e os dados digitados.
+      placeholder: |
+        1. Entrar com professor@meuplan.test
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: textarea
+    id: obtido
+    attributes:
+      label: Resultado obtido
+    validations:
+      required: true
+  - type: dropdown
+    id: severidade
+    attributes:
+      label: Severidade (impacto)
+      options:
+        - Crítica · impede o uso ou expõe dados
+        - Alta · função importante não funciona
+        - Média · funciona com erro ou contorno
+        - Baixa · detalhe visual ou de texto
+    validations:
+      required: true
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade (urgência para o negócio)
+      options:
+        - Alta
+        - Média
+        - Baixa
+    validations:
+      required: true
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Evidência
+      description: Arraste prints ou vídeos curtos para esta caixa.
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      placeholder: "Chrome 130 · Windows 11 · tela de computador · versão 2.4.1"
+    validations:
+      required: true
