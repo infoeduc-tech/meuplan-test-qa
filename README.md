@@ -46,6 +46,10 @@ Os dados ficam salvos apenas no navegador de quem está testando. Para voltar ao
 2. Descreva cada falha com passos para reproduzir, resultado esperado, resultado obtido, severidade e evidência (print ou vídeo). Use o formulário em **Issues › New issue › Relatar bug**.
 3. Em atividades de teste caixa-preta, use a aplicação como um usuário usaria e só abra o código depois da fase de exploração.
 
+## Desafio Operação QA
+
+Material para as squads do desafio em grupo: [enunciado](docs/operacao-qa/ENUNCIADO.md), [como entregar](docs/operacao-qa/ENTREGA.md) e [slides da apresentação](docs/operacao-qa/operacao-qa-slides.pdf).
+
 ## Rodar no computador e escrever testes
 
 Requer Node.js 22 ou mais novo.
@@ -70,7 +74,7 @@ src/app.js              telas e interações
 scripts/servidor.js     servidor local, sem dependências
 tests/unit/             testes unitários de exemplo (node:test)
 tests/e2e/              testes de ponta a ponta de exemplo (Playwright)
-docs/                   guia de estudo e modelos
+docs/                   guia de estudo, modelos e material da Operação QA
 .github/                formulário de bug e testes automáticos
 ```
 

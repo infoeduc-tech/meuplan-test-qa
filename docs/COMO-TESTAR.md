@@ -16,11 +16,11 @@ Para conferir a instalação, abra o terminal e rode `node -v` e `git --version`
 
 ## 2. Baixar o projeto
 
-O jeito mais simples é fazer um **fork**: no GitHub, clique em **Fork** no repositório do Meu Plan. Assim você ganha uma cópia sua, onde pode criar testes e abrir issues à vontade.
+Crie a sua cópia a partir do modelo: no repositório do Meu Plan, clique em **Use this template › Create a new repository** e escolha **Private**. Assim você ganha um repositório seu, onde pode criar testes e abrir issues sem que outras pessoas vejam o que encontrou. Evite o **Fork**: a cópia de um repositório público também fica pública.
 
 ```bash
-git clone https://github.com/SEU-USUARIO/meuplan-test-qa.git
-cd meuplan-test-qa
+git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+cd NOME-DO-REPOSITORIO
 npm install
 npx playwright install chromium
 ```
@@ -112,11 +112,11 @@ Se a atividade incluir correção:
 2. Escreva o teste que falha.
 3. Corrija o código até o teste passar.
 4. Rode `npm test` para garantir que nada mais quebrou.
-5. Abra um pull request no seu fork.
+5. Abra um pull request no seu repositório.
 
 ## 9. Testes automáticos no GitHub
 
-O arquivo `.github/workflows/testes.yml` roda os testes a cada push. No seu fork, abra a aba **Actions** e clique em **Enable workflows** na primeira vez. O resultado aparece com ✓ ou ✗ ao lado de cada commit, e o relatório do Playwright fica para download na execução.
+O arquivo `.github/workflows/testes.yml` roda os testes a cada push. No seu repositório, abra a aba **Actions**; se aparecer o botão **Enable workflows**, clique nele. O resultado aparece com ✓ ou ✗ ao lado de cada commit, e o relatório do Playwright fica para download na execução.
 
 ## 10. Relatar bugs no GitHub
 
