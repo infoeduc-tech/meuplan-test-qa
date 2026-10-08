@@ -6,8 +6,8 @@ body:
   - type: input
     id: resumo
     attributes:
-      name: "Bug report"
-      description: O problema em uma frase. Ex.: "Busca não encontra plano quando o título está em minúsculas".
+      label: "Bug report"
+      description: 'O problema em uma frase. Ex.: "Busca não encontra plano quando o título está em minúsculas".'
     validations:
       required: true
   - type: dropdown
