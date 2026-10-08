@@ -3,6 +3,7 @@
 Ambiente de treinamento em **Qualidade de Software**. O Meu Plan é uma startup fictícia que gera planejamentos de aula para professores. A aplicação foi construída para ser testada: contém falhas propositais que estudantes, equipes e candidatos precisam encontrar, documentar e defender.
 
 **Acesse:** https://infoeduc-tech.github.io/meuplan-test-qa/
+
 **Contatos:** tecnologia@infoeduc.com.br e emanuelpaivafelix@gmail.com
 
 Desenvolvido por **InfoEduc Tech**.
