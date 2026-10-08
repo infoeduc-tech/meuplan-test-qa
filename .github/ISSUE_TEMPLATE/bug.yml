@@ -6,7 +6,7 @@ body:
   - type: input
     id: resumo
     attributes:
-      label: Resumo
+      name: "Bug report"
       description: O problema em uma frase. Ex.: "Busca não encontra plano quando o título está em minúsculas".
     validations:
       required: true
